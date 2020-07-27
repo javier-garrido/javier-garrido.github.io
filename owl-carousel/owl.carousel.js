@@ -220,7 +220,7 @@
 		itemElement: 'div',
 		stageElement: 'div',
 
-		/*refreshClass: 'owl-refresh',
+		refreshClass: 'owl-refresh',
 		loadedClass: 'owl-loaded',
 		loadingClass: 'owl-loading',
 		rtlClass: 'owl-rtl',
@@ -229,7 +229,7 @@
 		itemClass: 'owl-item',
 		stageClass: 'owl-stage',
 		stageOuterClass: 'owl-stage-outer',
-		grabClass: 'owl-grab'*/
+		grabClass: 'owl-grab'
 	};
 
 	/**
