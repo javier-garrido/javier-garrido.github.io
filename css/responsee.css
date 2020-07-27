@@ -482,7 +482,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
 .xxl-10 {width:83.3333%;}
 .xxl-11 {width:91.6666%;}
 .xxl-12 {width:100%;}
-.right {float:right;}
+.right {float:right; font-weight:700;}
 .left {float:left;} 
 
 @media screen and (max-width:1366px) {
