@@ -1940,6 +1940,7 @@ nav.fixed, .fixed nav {
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   padding: 0 2em;
+  opacity: 0.95;
 }
 nav.fixed .top-nav li a, .fixed nav .top-nav li a {
   color: #444;  
