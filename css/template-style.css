@@ -264,7 +264,7 @@ hr.break-small {
   display: block;
   height: 2px;
   margin: 20px 0 35px;
-  width: 60px;
+  width: 80px;
 }
 hr.break-small.break-center {
   margin: 20px auto 35px;
@@ -488,7 +488,7 @@ aside.aside-left {
   background-color: #fff !important;
 }
 .background-primary, .primary-color-primary .background-primary {
-  background-color: #C81010 !important;
+  background-color: #474b4e !important;
 }
 .background-dark, .primary-color-dark .background-primary {
   background-color: #474b4e !important; 
