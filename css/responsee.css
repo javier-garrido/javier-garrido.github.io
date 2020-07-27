@@ -8,7 +8,7 @@
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
-  margin:0;	
+  margin:0;
 }
 body {
   background:none repeat scroll 0 0 #eeeeee;
@@ -374,6 +374,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   display:list-item;
   list-style:none outside none;
   padding:0.625rem;
+  text-align: center
 }
 .margin,.margin2x {display: block;}
 .margin {margin:0 -0.625rem;}

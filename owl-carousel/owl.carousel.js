@@ -189,16 +189,16 @@
 		center: false,
 		rewind: false,
 
-		mouseDrag: true,
-		touchDrag: true,
-		pullDrag: true,
+		mouseDrag: false,
+		touchDrag: false,
+		pullDrag: false,
 		freeDrag: false,
 
 		margin: 0,
 		stagePadding: 0,
 
 		merge: false,
-		mergeFit: true,
+		mergeFit: false,
 		autoWidth: false,
 
 		startPosition: 0,
@@ -220,7 +220,7 @@
 		itemElement: 'div',
 		stageElement: 'div',
 
-		refreshClass: 'owl-refresh',
+		/*refreshClass: 'owl-refresh',
 		loadedClass: 'owl-loaded',
 		loadingClass: 'owl-loading',
 		rtlClass: 'owl-rtl',
@@ -229,7 +229,7 @@
 		itemClass: 'owl-item',
 		stageClass: 'owl-stage',
 		stageOuterClass: 'owl-stage-outer',
-		grabClass: 'owl-grab'
+		grabClass: 'owl-grab'*/
 	};
 
 	/**
