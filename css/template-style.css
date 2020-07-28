@@ -505,6 +505,21 @@ aside.aside-left {
 }
 
 
+/* MIS BACKGGNDS */
+.background-about {
+    background-color: black;
+    background-image: url('../img/header3.jpg');
+}
+.background-projects {
+    background-color: black;
+    background-image: url('../img/header3.jpg');
+}
+.background-contact {
+    background-color: black;
+    background-image: url('../img/header3.jpg');
+}
+
+
 /* Hover Overlay */
 .image-hover-overlay {
   bottom: 0;
@@ -635,6 +650,11 @@ aside.aside-left {
 .primary-color-dark .button.button-primary-stroke:hover, .primary-color-dark a.button.button-primary-stroke:hover {
   background: #002633 none repeat scroll 0 0;
   color: #fff;
+}
+
+/* MIO */
+.section-up  { 
+  padding: 11.5rem 1.25rem;
 }
 
 /* Containers */
