@@ -51,7 +51,7 @@ form.customform input, form.customform select, form.customform textarea, form.cu
  font-family:inherit;
  margin-bottom:1.25rem;
 } 
-form.customform input, form.customform select {height: 2.7rem;}
+form.customform input, form.customform select {height: 4rem;}
 form.customform input, form.customform textarea, form.customform select { 
  background: none repeat scroll 0 0 #F5F5F5;
  transition: background 0.20s linear 0s;
