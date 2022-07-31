@@ -2186,5 +2186,6 @@ video {
     margin: 35px 0; } }
 
 footer {
-    padding: 50px 0 65px
+    padding: 50px 0 65px;
+    background-color: #474b4e;
 }
