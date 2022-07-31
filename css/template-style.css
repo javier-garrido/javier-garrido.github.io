@@ -1210,7 +1210,7 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover,
 form.customform input, form.customform textarea, form.customform select {
   background: rgba(0, 0, 0, 0.03) none repeat scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.14);
-  font-size: 12px;
+  /*font-size: 12px;*/
   padding: 0.625rem;
   width: 100%;
 }
