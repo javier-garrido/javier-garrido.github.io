@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javier Garrido López</title>
+    <link rel="icon" href="img/processor2.png">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-4">
+          <a href="/" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo2.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark2.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-8">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+          
+        <header class="section-up background-makarduino">    <!-- BACKGROUND -->
+            
+          <div class="line">
+              
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">MAKARDUINO</h1>   <!-- TÍTULO -->
+            <p class="margin-bottom-0 text-size-20">Make your own Arduino.</p>    <!-- SUBTÍTULO (Resumen) -->
+              
+          </div>  
+        </header>
+        <div class="section background-white"> 
+          <div class="line">  
+              
+            <h2 class="text-size-40 margin-bottom-30">Description</h2>     <!-- TÍTULO (otra vez; opcional) -->
+              
+            <!--hr class="break-small background-primary margin-bottom-30"-->   <!-- RAYA SEPARACIÓN (opcional) -->
+              
+            <p class="text-size-20 margin-bottom-40">                       <!-- INICIO TEXTO -->
+                
+                In this project, I'll be explaining how I have build my own Arduino UNO board, which works exactly the same as the original, so that you can
+                build your own board too if you wish! Let's get started. In the next picture, you can see the physical aspect of the finished board:
+
+                <br><br>
+
+                <img src="img/makarduino/1_mi_arduino.jpg" alt="" style="width:600px;" class="center">
+
+                <br><br>
+
+                As you can see, it has some differences from the original, like the black and white board design, micro USB port, white LEDs and some logos, among other things.
+
+                <br><br>
+
+                To begin with, Arduino UNO is a microcontroller board which is based on the ATmega328P chip. It's really easy to use it for starting new projects, or simply for testing. It has some digital I/O pins (including PWM output signals), some analog input pins, a USB connection, an external power jack and offers you voltages of 5 V and 3.3 V. In this project, I've made my own Arduino Uno board and named it MAKARDUINO, and I will show you how to make your own board. It's important to say that Arduino is open-source hardware, so you can buy and use all the components and make your own board and call it as you want. Also, once you know how the Arduino schematic works you can build your own boards using the ATmega microcontroller.
+                
+                <br><br>
+                
+                <img src="img/makarduino/2_dos_arduinos.jpg" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                <b>Components</b>
+                
+                <br><br>
+                
+                In the first place, we must know the components we need in order for the board to work. All of them are good and really low cost components. Obviously, we need the ATmega328P microcontroller. We can have it in the PU format, which is larger, is soldered as a THD component and lets you introduce it in a socket, so that you can replace it, or in the AU format, which is smaller and must be soldered as a SMD component. I have used the AU format for my design.
+                
+                <br><br>
+                
+                In addition, the microcontroller needs more components in order to work properly. Firstly, it needs a supply of 5 V, very well regulated, and for that we'll be using the NCP1117 voltage regulator, along with several capacitors. Also, the microcontroller works at 16 MHz, so it needs a 16 MHz crystal oscillator, along with two 22 pF capacitors to oscillate adequately.
+                
+                Moreover, the board needs an FTDI chip (FT232RL) to make the connection between the microcontroller and the USB, and it also needs the micro USB plug, the reset push button, some male and female pins, some capacitors and resistors, LEDs, the power jack, some diodes and some operational amplifiers (LM358D) and a P-channel MOSFET (FDN340P) for the supply part.
+                
+                <br><br>
+                
+                <img src="img/makarduino/3_componentes.jpg" alt="" style="width:500px;" class="center">
+                
+                <br><br>
+                
+                <b>Schematic</b>
+                
+                <br><br>
+                
+                The schematic of my board can be seen in the next picture. In order to create the schematic and the PCB designs I've used Altium Designer.
+                
+                <br><br>
+                
+                <!--img src="img/makarduino/4_MAKARDUINO_SCH.svg" alt="" style="width:600px;" class="center"-->
+                
+                <a href="img/makarduino/4_MAKARDUINO_SCH.svg" target="_blank"><img src="img/makarduino/4_MAKARDUINO_SCH.svg" alt=""></a>
+                
+                <br><br>
+                
+                To start with, let's focus on the supply part. There, we can receive the +5 V from the external power jack or from the USB. From the USB, we take the D+ and D- signals to exchange data between the microcontroller and the computer, and also take the VBUS signal, which has 5 V, and take it to the drain of the P-channel MOSFET after passing through a fuse and a low pass filter composed by an inductor and some capacitors. On the other hand, from the power jack, which must be connected to a range between 7 V and 12 V, we take the signal and, after a diode to prevent inverse polarity, it passes through some capacitors and the 5 V voltage regulator. The same signal from the power jack is taken to a voltage divider and it is compared to a 3.3 V signal with the LM358D operational amplifier, and the output goes through a voltage follower, so that if the input is higher than 3.5 V (the minimum value it can take when the power jack is connected) the output of the operational amplifier is +5 V and the P-channel MOSFET is open so that the 5 V don't come from the USB. However, if the power jack is unconnected, the output of the operational amplifier will be 0 V so that the P-channel MOSFET closes up and the 5 V come from the USB. Also, you can connect the voltage between 7 V and 12 V through the Vin signal, bearing in mind it has to have the correct polarity.
+                
+                <br><br>
+                
+                Now, we move on to the FTDI part. In my design, I have used the FT232RL to make the UART communication between the microcontroller and the USB. Alternatively, you can use the CH340 chip, checking its datasheet conveniently to make the connections. From the FT232RL, we take the RX and TX pins to make the UART communication with the microcontroller and receive de D+ and D- signals from the USB. Also, we connect two LEDs to the CBUS0 and CBUS1 pins to know when the data is transmitted through RX and TX pins. Moreover, we connect the DTR pin to the RESET of the microcontroller, which is a handshake signal. Focusing on the supply part of the FT232RL, we connect the VCC and VCCIO pins to +5 V and connect the RESET pin to a pull-up resistor (I put two resistors in parallel to make a smaller one) and to a capacitor to ground, so that the FT232RL receives a logic '0' during the time the capacitor charges up through the resistors. Finally, we take the 3.3 V output signal that the FT232RL chip offers for the supply part and as an output pin, and filter it with a 1 uF capacitor.
+                
+                <br><br>
+                
+                Lastly, we focus on the ATmega328P microcontroller. First of all, we connect the VCC and AVCC pins to +5 V and filter those signals with a 470 nF capacitor to ground. Also, we connect the AREF signal to ground with a 100 nF capacitor. Besides, we connect the RESET pin to a pull-up resistor, to the DTR signal and through the reset button to ground, since it resets the microcontroller when receiving a logic '0'. On the other hand, it is necessary to connect the 16 MHz crystal oscillator to the XTAL1 and XTAL2 pins, along with two 22 pF capacitors so that it oscillates properly. Finally, we take the I/O pins from the microcontroller to the outside in order to make the analog and digital pin strips, the supply pins, the I2C pins and the SPI pins. We finally connect two LEDs to +5 V and to the SCK signal of the microcontroller, respectively.
+                
+                <br><br>
+                
+                <b>PCB - Printed Circuit Board</b>
+                
+                <br><br>
+                
+                The last step to finish the Arduino board is to design the PCB or Printed Circuit Board. First, we make the shape of the board, according to the original shape of the Arduino UNO shape in my case, but you can make it with the shape you prefer. Also, we make the drills on the board. After delimiting the shape of the board, we place the components in a convenient way, starting with the bigger components, such as the microcontroller, the FTDI, the oscillator or the power jack, and following with the smaller components, like capacitors and resistors.
+                
+                <br><br>
+                
+                <img src="img/makarduino/5_1_pistas_Altium.png" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                <img src="img/makarduino/5_2_pistas_Altium.png" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                After that, we have to route the different tracks that connect all the pins of every component on the board. The width of the tracks I've used has been 16 and 24 mils for the power tracks and 10 and 12 mils for the microcontroller and the rest of the signal tracks.
+                
+                <br><br>
+                
+                <img src="img/makarduino/6_1_MAKARDUINO_PCB_top.svg" alt="" style="width:500px;" class="center">
+                
+                <br><br>
+                
+                <img src="img/makarduino/6_2_MAKARDUINO_PCB_bottom.svg" alt="" style="width:500px;" class="center">
+                
+                <br><br>
+                
+                Once all the necessary tracks have been traced, using both the top layer and the bottom layer, a final step is performed, which consists of making a ground plane. This consists of pouring copper onto the entire board so that the tracks connected to the GND network merge into that pour and the tracks that are different are separated from the pour. Also, to assist dissipation and increase connectivity between the two layers of the PCB, a series of vias have been made throughout the PCB, so that the GND pour is attached at many points in the two layers. Finally, it only remains to place the names of each of the components and of the pads so that they are seen correctly. In addition, a series of indications have been added, which are the logos, the author's name and the device name, on both layers.
+                
+                <br><br>
+                
+                <img src="img/makarduino/7_1_Altium_3d_top.png" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                <img src="img/makarduino/7_2_Altium_3d_bottom.png" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                <b>Gerber files</b>
+                
+                <br><br>
+                
+                After the complete design of the PCB, we proceed to the generation of the Gerber files from Altium Designer, including the drill information. These files contains the necessary information for the manufacturing of the PCB, and will be used to order it, in my case, to JLCPCB. I've used the standard Gerber X2. You can see the generation of these files from the program in the next picture:
+                
+                <br><br>
+                
+                <img src="img/makarduino/8_gerber.png" alt="" style="width:800px;" class="center">
+                
+                <br><br>
+                
+                <b>PCB soldering</b>
+                
+                <br><br>
+                
+                Using the Gerber files we previously generated, we can order the PCB. In my case, I have ordered it to JLCPCB company. I ordered five different boards of my PCB design, as you can see in the next picture:
+                
+                <br><br>
+                
+                <img src="img/makarduino/9_PCB_sin_soldar.jpg" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                For the soldering part, I've used a soldering station with very small soldering tips and some tweezers to place the components. It's also important to use flux and, for small components, to use very thin solder wire. To make the task easier, I have also used a digital microscope so as to see easily the component pads placement and to see whether the soldering of each component was right. First of all, we place and solder the smaller components on the board, which are resistors, capacitors, inductors, diodes, LEDs and the fuse. After that, we continue soldering bigger components in a progressive way, going on with the MOSFET, the oscillator, the voltage regulator, the operational amplifier, the USB connector, the push button and the power jack, leaving for last the FTDI and the microcontroller, which are the most difficult and important components to solder on the board. Finally, we end up soldering the pin strips on the board. You can see the final result of the soldering part in the picture below. Also, there's a video where you can observe how I solder one pad of one of the components.
+                
+                <br><br>
+                
+                <img src="img/makarduino/10_1_placa_soldada.jpg" alt="" style="width:800px;" class="center">
+                
+                <br><br>
+                
+                <video height="600" controls>
+                    <source src="img/makarduino/10_2_video_soldadura_red.mp4" type="video/mp4">
+                </video>
+                
+                <br><br>
+                
+                After soldering everything on the board, we have to make sure there are no shorts and we need to check the conductivity between the different tracks before powering it, to avoid damaging any component. After checking that, we can now power the board and prepare for burning the bootloader on the microcontroller.
+                
+                <br><br>
+                
+                <b>Burn the bootloader</b>
+                
+                <br><br>
+                
+                Now, if the microcontroller is a virgin chip, it won't have the bootloader. To burn the bootloader in your virgin microcontroller, you will need to make an SPI connection between your board and an Arduino UNO board, joining the SCK, MISO, MOSI, 5 V and GND pins and the SS pin from the Arduino UNO board to the RESET pin of your board. You've got all these pins in the ICSP port of your board.
+                
+                <br><br>
+                
+                Then, connect your Arduino UNO board to your PC. Open the Arudino IDE and go to <i>File > Examples > Arduino ISP > Arduino ISP</i> and open that example. Then go to <i>Tools > Board</i> and select the Arduino UNO board and go to <i>Tools > Port</i> and select the COM port of the Arudino UNO board. Now select <i>Tools > Programmer > Arduino as ISP</i>. After that, upload the code we've opened before to your Arduino UNO board and, finally, go to <i>Tools > Burn Bootloader</i>. Now, the LEDs of both boards will start to blink quickly. When the process is done, you will receive the message of <i>Done burning bootloader</i>, and that means your board is ready to work.
+                
+                <br><br>
+                
+                <img src="img/makarduino/11_arduino_ide.png" alt="" style="width:500px;" class="center">
+                
+                <br><br>
+                
+                <b>Uploading the first program</b>
+                
+                <br><br>
+                
+                Once we have burnt the bootloader, the microcontroller can communicate through the UART to the USB and we can upload a code from our computer. So, I connect my MAKARDUINO board to my computer through the USB and, for example, I will upload a simple code to blink two LEDs, one on the board itself and an external one. You can see the code and the result in the image and the video below.
+                
+                <br><br>
+                
+                <img src="img/makarduino/12_1_codigo.png" alt="" style="width:600px;" class="center">
+                
+                <br><br>
+                
+                <video height="600" controls>
+                    <source src="img/makarduino/12_2_video_blink.mp4" type="video/mp4">
+                </video>
+                
+                <br><br>
+                
+                And that is all. I hope you enjoyed it and found it useful. I will let you the links to the schematic, the PCB tracks and the Gerber files of my MAKARDUINO board, so you can build your own Arduino board if you wish!
+                
+              <br><br>
+                
+                <a href="img/makarduino/MAKARDUINO_SCH.pdf" target="_blank" style="margin-left: 40px" download>
+                   ► Download Schematic
+                </a>
+                <br>
+                <a href="img/makarduino/MAKARDUINO_PCB_.PDF" target="_blank" style="margin-left: 40px" download>
+                   ► Download PCB tracks
+                </a>
+                <br>
+                <a href="img/makarduino/Gerber%20X2%20MAKARDUINO.rar" target="_blank" style="margin-left: 40px" download>
+                   ► Download Gerber files
+                </a>
+                
+            </p>                                                            <!-- FIN TEXTO -->
+          </div>
+        </div> 
+      </article>
+    </main>
+    
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- FOOTER -->
+    <footer>
+    <!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+            <div class="social">
+				<!--h5>Follow me!!</h5-->
+                <h5> </h5>
+				<div class="social-icons">
+					<a href="https://www.instagram.com/javiergl__/" target="_blank"><img src="./img/instagram_white.png" alt="social icon"></a>
+					<a href="https://www.linkedin.com/in/javier-garrido-l%C3%B3pez-9a0ab9210/" target="_blank"><img src="./img/linkedin_white.png" alt="social icon"></a>
+					<a href="https://www.facebook.com/javier.garridolopez.5/" target="_blank"><img src="./img/facebook_white.png" alt="social icon"></a>
+					<a href="https://twitter.com/JaaviierGarrido" target="_blank"><img src="./img/twitter_white.png" alt="social icon"></a>
+				</div>
+                <h5> </h5>
+				<!--h5>Share it!</h5-->
+			</div>
+		</div>
+	</section>
+    
+    <!-- Copyright -->
+    <section class="padding background-dark full-width">
+        <div class="s-12">
+          <p class="text-size-12">Copyright © Javier Garrido López 2022</p>
+          <!--p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p-->
+        </div>
+        <!--div class="s-12 l-6">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+        </div-->
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>
