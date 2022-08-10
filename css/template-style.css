@@ -524,6 +524,11 @@ aside.aside-left {
     background-image: url('../img/makarduino/header.jpg');
 }
 
+.background-vna {
+    background-color: black;
+    background-image: url('../img/vna/header_VNA.jpg');
+}
+
 
 /* Hover Overlay */
 .image-hover-overlay {
